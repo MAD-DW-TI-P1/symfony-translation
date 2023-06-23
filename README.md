@@ -18,13 +18,20 @@ Instalación de Symfony, creación de usuarios con validación por email y acces
 - composer require symfony/maker-bundle
 - composer update
 - composer require form validator twig-bundle security-csrf annotations
+- composer require symfony/translation
 
-# Configuración y creación de entidades
+# Configuración y creación de controlador
 
 - Modificamos el .env para que genere un sqlite (https://www.sqlite.org/index.html)
-...
+- php bin/console make:controller (Home con su controlador y vista)
+- Creo el archivos de traducciones
+- Utilizo las traducciones en el controlador
+- Hago rutas con variables para las traducciopnes de Twig
 
+
+// Translation, en base de datos, en twig, en controler o formstypes, servicios y email. En las rutas, cómo construirlas. Ver en archivos en clase de tiddly y hacer Github. 
 
 # Referencias
 
 - https://github.com/diegotham/certificacion-symfony/blob/master/16-Miscellaneous/6-internacionalizacion-y-localizacion-en-symfony.md
+- https://symfony.com/doc/5.4/translation.html
